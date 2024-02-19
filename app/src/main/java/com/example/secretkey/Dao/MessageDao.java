@@ -1,6 +1,7 @@
 package com.example.secretkey.Dao;
 
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
@@ -16,4 +17,10 @@ public interface MessageDao {
 
     @Query("select * from message order by creationtime desc")
     List<Message> getAllMessages();
+
+    @Delete
+    void delete (Message message);
+
+    @Query("delete from message")
+    void deleteAllMessages();
 }
