@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="11dp"
+    app:cardCornerRadius="21dp"
+    app:cardElevation="5dp"
+    android:backgroundTint="#AEF3FD"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtPlainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Plain Text"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/txtEncryptedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPlainText"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Encrypted Text"
+            android:textColor="#9F9898"
+            android:textSize="25sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEncryptedText"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/txtCreationTime"
+                android:layout_width="0dp"
+                android:layout_weight="0.75"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="31:10:2023"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEF3FD"
+                android:id="@+id/btnDelete"
+                android:src="@drawable/ic_delete"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEF3FD"
+                android:id="@+id/btnCopyToClipboard"
+                android:src="@drawable/ic_copy"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#AEF3FD"
+                android:id="@+id/btnShare"
+                android:src="@drawable/ic_share"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
