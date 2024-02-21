@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AboutUsFragment">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:background="#B8B8B8"
+            android:text="Contact Us" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            
+            <ImageView
+                android:id="@+id/imgGmail"
+                android:layout_width="0dp"
+                android:layout_height="69dp"
+                android:layout_weight=".08"
+                android:src="@drawable/gmail" />
+
+            <ImageView
+                android:id="@+id/imgLinkedin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".08"
+                android:src="@drawable/linkedin" />
+
+            <ImageView
+                android:id="@+id/imgInstagram"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".08"
+                android:src="@drawable/instagram" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:text="For Project Enquiry"
+            android:background="#B8B8B8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGitHub"
+            android:text="https://github.com/Sohamhitcsecsprojects/AndroidProject.git"
+            android:textSize="18dp"
+            android:textColor="#003B55"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FF0000"
+            android:layout_marginTop="10dp" >
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="23dp"
+                android:textColor="#FFFFFF"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:text="Rate us on play store" />
+            
+            <LinearLayout
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:orientation="horizontal" >
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_star" />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_star" />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_star" />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_star" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_star" />
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:background="#B8B8B8"
+            android:text="Our Services" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:background="#9CF69A"
+            android:text="We develop projects in different languages framework and technology \n\nSpring boot + Angular + MySql or MongoDb\n\nNodeJs + Angular + MySql\n\nJFrame (Java Desktop Application)\n\nC# (.net) + MsSql or MsAccess\n\nAndroid application and many more.\n\nAsk us to develop projects for you." />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#28FFDF"
+            android:layout_marginTop="10dp">
+            
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight=".08"
+                android:layout_height="100dp"
+                android:paddingStart="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="italic"
+                    android:paddingTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Developed by" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="32dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Soham Maity" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:background="#F6E590"
+            android:text= "Please read and acknowledge it before using the app:
+\n\nData Security: \nour app is designed to encrypt and decrypt text to enhance data security. While we have taken measures to develop a secure app, we cannot guarantee absolute security. The effectiveness of encryption depends on factors such as the atrength of the encryption algorithm, the security of your passwords, and the overall security of your device.
+\n\nUser Responsibility: \nUsers are solely responsible for the proper and safe use of the app. This includes the management of encryption keys, passwords, or any other authentication credentials used within the app. It is crucial to select strong, unique passwords and ensure their safe storage. Exercise caution when sharing encrypted data or sensitive information with others.
+\n\nCompliance with Laws: \nEnsure that your use of the app complies with all applicable laws and regulations in your jurisdiction. It is your responsibility to understand and adhere to any legal requirements related to the use of encryption technologies.
+\n\nData Loss or Misuse: \nThe app provides encryption and decryption functionality, but any misuse or incorrect usage of the app may result in data loss or unintended outcomes. We recommend taking proper precautions, such as backing up your important data and carefully verifying
+the correctness of encryption and decryption operations.
+\n\nNo Liability: \nWe are not liable for any damages, losses, or unauthorized access to data resulting from the use or misuse of the app-
+
+the ag that any issues arising from its use are your sole responsibility, and we are not liable for any conseque quences." />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

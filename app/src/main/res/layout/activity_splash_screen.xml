@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic" />
+
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appIcon"
+        android:layout_centerInParent="true"
+        android:text="Secret Key"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txtFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAppName"
+        android:layout_marginTop="70dp"
+        android:text="from"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txtBtechDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFrom"
+        android:text="Soham Maity"
+        android:textAlignment="center"
+        android:textColor="#085A5A"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/txtBtechDays"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo" />
+
+
+</RelativeLayout>
